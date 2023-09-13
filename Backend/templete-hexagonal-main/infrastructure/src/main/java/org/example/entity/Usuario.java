@@ -31,4 +31,12 @@ public class Usuario {
     @Column(name="fecha_registro")
     private Date fechaRegistro;
 
+    public Usuario( String nombre, String apellido, String email, Date fechaRegistro) {
+
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.email = email;
+        this.fechaRegistro = fechaRegistro;
+    }
+
 }

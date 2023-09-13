@@ -97,7 +97,7 @@ public class UsuarioServiceImpl implements UsuarioServicePort {
     @Override
     public void removeUsuario(Integer id) {
         try {
-            usuarioPersistencePort.getUsuariosByUsuario(id);
+            usuarioPersistencePort.removeUsuario(id);
         }catch (Exception e){
             throw new RuntimeException( "Error " + e.getMessage());
         }
